@@ -17,7 +17,7 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "users_validated")
+@Table(name = "users")
 public class User extends EntityBase {
 
     @NotEmpty
@@ -36,6 +36,7 @@ public class User extends EntityBase {
     @Size(min = 5, max = 10)
     private String phone;
 
+    @Column(name = "user_token")
     private String token;
 
 }
