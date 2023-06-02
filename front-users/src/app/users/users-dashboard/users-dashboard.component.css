@@ -9,29 +9,49 @@
   /* Utiliza una fuente adecuada */
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    /* alineamos al centro el contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     
   }
   
-  /* Agrega sombra a la tabla */
+  /* Agrega sombra a la tabla y la centramos en el body */
   table {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+
+  }
+  thead{
+    background-color: #8215ff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
   }
   
   /* Cambia la apariencia de los botones */
   button {
     border: none;
     border-radius: 10px;
+    background-color: #30f1c1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
     color: var(--color-primary);
     cursor: pointer;
     font-weight: bold;
     padding: 10px 20px;
     transition: box-shadow 0.4s ease-in-out ;
-  
+    margin-bottom: 5px;
   }
   
   button:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.14);
+    color: #fdfdfd;
   }
   
   /* Cambia el estilo de la cabecera */
@@ -46,12 +66,7 @@
   
   
   }
-  
-  /* Agrega sombra a los elementos de la página */
-  .card-body,
-  .table {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+ 
   
   /* Agrega un fondo claro a las filas impares de la tabla */
   .table-striped tbody tr:nth-child(odd) {
@@ -71,3 +86,13 @@
     height: 100%;
   }
   
+  .card {
+    width: 100%;
+    max-width: 860px;
+    max-height: 420px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.178);
+   
+  }
