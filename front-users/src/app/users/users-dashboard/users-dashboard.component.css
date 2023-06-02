@@ -1,0 +1,73 @@
+
+:root {
+    --color-background: #f2f2f7;
+    --color-text: #333333;
+    --color-primary: #007aff;
+    --color-secondary: #8e8e93;
+  }
+  
+  /* Utiliza una fuente adecuada */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    
+  }
+  
+  /* Agrega sombra a la tabla */
+  table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cambia la apariencia de los botones */
+  button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+    color: var(--color-primary);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: box-shadow 0.4s ease-in-out ;
+  
+  }
+  
+  button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.14);
+  }
+  
+  /* Cambia el estilo de la cabecera */
+  .header-custom {
+    background-color: #007aff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+  
+  
+  
+  }
+  
+  /* Agrega sombra a los elementos de la página */
+  .card-body,
+  .table {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Agrega un fondo claro a las filas impares de la tabla */
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Agrega un fondo gris claro a las filas pares de la tabla */
+  .table-striped tbody tr:nth-child(even) {
+    background-color: #f2f2f7;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  

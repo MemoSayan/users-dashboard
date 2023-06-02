@@ -19,7 +19,8 @@ public class UserController {
 
     @GetMapping("/users")
     public List<UserDto> index() {
-        return userService.findAll();
+        List<UserDto> usersList = userService.findAll();
+        return usersList;
     }
 
     @GetMapping("/user/{id}")
@@ -27,9 +28,14 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @PostMapping("/user/{id}")
+    @PutMapping("/user/{id}")
     public UserDto updateUserDto(@RequestBody UserDto userDto, @PathVariable Long id) {
         return userService.updateUser(userDto, id);
     }
+
+   /* @PostMapping("/user")
+    public UserDto createUserDto(@RequestBody UserDto userDto) {
+        return userService.createUser(userDto);
+    } */
 
 }
