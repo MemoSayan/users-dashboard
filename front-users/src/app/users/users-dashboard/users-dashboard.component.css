@@ -36,7 +36,7 @@
   }
   
   /* Cambia la apariencia de los botones */
-  button {
+  .boton-primario {
     border: none;
     border-radius: 10px;
     background-color: #30f1c1;
@@ -47,9 +47,10 @@
     padding: 10px 20px;
     transition: box-shadow 0.4s ease-in-out ;
     margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
   }
   
-  button:hover {
+  .boton-primario:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.14);
     color: #fdfdfd;
   }
@@ -62,9 +63,6 @@
     font-weight: bold;
     padding: 20px;
     text-align: center;
-  
-  
-  
   }
  
   
